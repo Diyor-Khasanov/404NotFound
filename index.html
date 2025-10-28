@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>404 - Not Found Page</title>
+  </head>
+  <body>
+    <div class="stars" id="stars"></div>
+    <div class="planets">
+      <div class="planet planet1"></div>
+      <div class="planet planet2"></div>
+      <div class="planet planet3"></div>
+    </div>
+
+    <div class="container">
+      <div class="astronaut">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Astronaut illustration -->
+          <defs>
+            <linearGradient id="helmet" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop
+                offset="0%"
+                style="stop-color: #e0f7ff; stop-opacity: 0.9"
+              />
+              <stop
+                offset="100%"
+                style="stop-color: #a8edea; stop-opacity: 0.6"
+              />
+            </linearGradient>
+          </defs>
+          <!-- Body -->
+          <ellipse cx="100" cy="130" rx="45" ry="55" fill="#f5f5f5" />
+          <!-- Arms -->
+          <rect
+            x="50"
+            y="120"
+            width="15"
+            height="50"
+            rx="7"
+            fill="#f5f5f5"
+            transform="rotate(-20 57 120)"
+          />
+          <rect
+            x="135"
+            y="120"
+            width="15"
+            height="50"
+            rx="7"
+            fill="#f5f5f5"
+            transform="rotate(20 143 120)"
+          />
+          <!-- Helmet -->
+          <circle cx="100" cy="80" r="40" fill="url(#helmet)" opacity="0.8" />
+          <circle
+            cx="100"
+            cy="80"
+            r="35"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+          />
+          <!-- Visor -->
+          <ellipse
+            cx="100"
+            cy="80"
+            rx="25"
+            ry="20"
+            fill="rgba(102, 126, 234, 0.5)"
+          />
+          <!-- Reflection -->
+          <ellipse
+            cx="95"
+            cy="75"
+            rx="10"
+            ry="8"
+            fill="rgba(255, 255, 255, 0.6)"
+          />
+          <!-- Antenna -->
+          <line
+            x1="100"
+            y1="40"
+            x2="100"
+            y2="25"
+            stroke="#ff6b6b"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <circle cx="100" cy="23" r="5" fill="#ff6b6b" />
+          <!-- Backpack -->
+          <rect x="85" y="125" width="30" height="35" rx="5" fill="#667eea" />
+          <circle cx="95" cy="140" r="4" fill="#4facfe" />
+          <circle cx="105" cy="140" r="4" fill="#4facfe" />
+        </svg>
+      </div>
+
+      <h1>404</h1>
+      <h2 class="user"></h2>
+      <p>
+        The page you're looking for has drifted off into deep space. It might
+        have been abducted by aliens or got lost in a black hole.
+      </p>
+      <a href="/" class="btn-home">Return to Earth</a>
+    </div>
+  </body>
+</html>
